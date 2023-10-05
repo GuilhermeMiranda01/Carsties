@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres
+    environment:
+        - POSTGRES_PASSWORD=postgrespw
+    ports:
+        - 5432:5432
+  mongodb:
+    image: mongo
+    environment:
+        - MONGO_INITDB_ROOT_USERNAME=root
+        - MONGO_INITDB_ROOT_PASSWORD=mongopw
+    ports:
+        - 27017:27017
+#docker compose up -d
+#\\wsl.localhost\docker-desktop-data\data\docker\volumes\curso-2023_pgdata  volume
